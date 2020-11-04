@@ -1,12 +1,30 @@
 {
-  "name": "idea-helper",
+  "name": "ge-ide-helper",
   "version": "0.0.0",
-  "description": "Local web server application which, given a file name, issues a redirect link for IDEA to open the the first file with the give name located within the directory where the application is running.",
+  "description": "Local web server application to support Gradle Enterprise UI and IDEA integration.",
   "main": "index.js",
+  "bin": {
+    "ge-ide-helper": "index.js"
+  },
   "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js /Users/almilo/gradle/dotcom",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/almilo/ge-ide-helper.git"
   },
   "keywords": [],
   "author": "Alberto Mijares <almilo@almilo.es>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "cors": "2.8.5",
+    "express": "4.17.1",
+    "querystring": "0.2.0",
+    "shelljs": "0.8.4"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.6"
+  }
 }
