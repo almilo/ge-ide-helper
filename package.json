@@ -1,0 +1,12 @@
+{
+  "name": "idea-helper",
+  "version": "0.0.0",
+  "description": "Local web server application which, given a file name, issues a redirect link for IDEA to open the the first file with the give name located within the directory where the application is running.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Alberto Mijares <almilo@almilo.es>",
+  "license": "MIT"
+}
