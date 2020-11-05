@@ -8,7 +8,7 @@ const PORT = 16666;
 
 [
     expressApp => expressApp.use(cors()),
-    expressApp => expressApp.use(express.static('public')),
+    expressApp => expressApp.use(express.static(`${__dirname}/public`)),
     expressApp => expressApp.use(express.json()),
     javaBasedTests
 ]

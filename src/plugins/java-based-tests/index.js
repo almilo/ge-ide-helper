@@ -15,7 +15,7 @@ const GE_TESTS_CONTAINER_SEARCH_PARAMETER = 'tests.container';
 
 module.exports = expressApp => {
     expressApp
-        .use(express.static('.'))
+        .use(express.static(__dirname))
         .post(`/${GET_LINKS_PATH_FRAGMENT}`, processGetLinksRequest)
         .get(`/${OPEN_PATH_FRAGMENT}`, processOpenFileRequest);
 
